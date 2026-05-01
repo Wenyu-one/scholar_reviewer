@@ -1,0 +1,22 @@
+# ScholarReviewer AI - 学术文献综述智能体
+# 依赖包列表
+
+# 核心依赖
+arxiv>=2.1.0          # arXiv API客户端
+requests>=2.31.0       # HTTP请求
+PyMuPDF>=1.23.0        # PDF解析（fitz）
+beautifulsoup4>=4.12.0  # HTML解析（PubMed）
+pyyaml>=6.0             # YAML配置文件
+tqdm>=4.66.0           # 进度条
+
+# LLM调用（可选，支持多种后端）
+openai>=1.0.0           # OpenAI API（可选）
+# anthropic>=0.8.0      # Anthropic Claude API（可选）
+
+# 输出格式
+markdown>=3.5.0          # Markdown处理
+pandas>=2.1.0           # 生成对比表格（CSV/Excel）
+
+# 类型检查（开发用）
+mypy>=1.6.0
+pytest>=7.4.0
